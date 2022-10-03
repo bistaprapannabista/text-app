@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button.js';
+import Navbar from './components/Navbar.js';
+import { useState } from "react";
 
 function App() {
-  return (
+    const [input, setInput] = useState('');
+    const[darkMode,setDarkMode] = useState(false);
+
+    const changeToDarkMode = () => {}
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar name='Text App'/>
+      <div className="container">
+        <div className="m-3">
+          <textarea value={input} onChange={(e)=>setInput(e.target.value)} className="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <h1>{input}</h1>
+      </div>
     </div>
-  );
+    );
 }
 
 export default App;
