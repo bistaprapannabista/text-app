@@ -1,0 +1,37 @@
+.blue-btn{
+	background-color: #4681f4;
+	border: 2px solid blue;
+}
+
+.green-btn{
+	background-color: #33b249;
+	border: 2px solid green;
+}
+
+.red-btn{
+	background-color: #dd7973;
+	border: 2px solid red;
+}
+
+.yellow-btn{
+	background-color: #ffbd03; 
+	border: 2px solid yellow;
+}
+
+.white-btn{
+	background-color: white;
+	border: 2px solid grey;
+}
+
+button{
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px;
+	font-weight: bold;
+}
+button:hover{
+	background-color: #a881af;
+	color: white;
+	cursor: none;
+}
