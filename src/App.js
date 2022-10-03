@@ -13,7 +13,7 @@ function App() {
       <Navbar name='Text App'/>
       <div className="container">
         <div className="m-3">
-          <textarea value={input} onChange={(e)=>setInput(e.target.value)} className="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          <textarea placeholder="Enter your text here!" value={input} onChange={(e)=>setInput(e.target.value)} className="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
         </div>
         <h1>{input}</h1>
       </div>

@@ -1,6 +1,8 @@
+import './components/Button.css';
+
 const Button = (props) =>{
 	return (
-		<button className="btn btn-primary">Sumbit</button>
+		<button>{props.name}</button>
 	);
 }
 
